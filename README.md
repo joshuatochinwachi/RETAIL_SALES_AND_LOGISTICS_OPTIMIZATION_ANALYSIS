@@ -37,9 +37,10 @@ The analysis aimed to answer the following key business questions:
 The ETL process was implemented using Python to prepare the data for analysis:
 Extract: The dataset was downloaded from Kaggle using the Kaggle API and extracted from a zip file.
 Transform:
-•	Handled null values by replacing 'Not Available' and 'unknown' with NaN.
-•	Renamed columns to lowercase and replaced spaces with underscores for consistency.
-•	Derived new columns: discount, sale_price, and profit using existing columns.
-•	Converted order_date from an object to a datetime data type.
-•	Dropped unnecessary columns like cost_price, list_price, and discount_percent.
+a)	Handled null values by replacing 'Not Available' and 'unknown' with NaN.
+b)	Renamed columns to lowercase and replaced spaces with underscores for consistency.
+c)	Derived new columns: discount, sale_price, and profit using existing columns.
+d)	Converted order_date from an object to a datetime data type.
+e)	Dropped unnecessary columns like cost_price, list_price, and discount_percent.
 Load: The cleaned data was loaded into a SQL Server database using the sqlalchemy library, with options to either replace or append the data.
+
