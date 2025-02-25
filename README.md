@@ -221,6 +221,20 @@ ORDER BY (profit_2023 - profit_2022) DESC;
 The analysis yielded the following key insights based on the SQL queries:
 1. Top 10 Revenue-Generating Products
 The top 10 products contributing the most to revenue were identified. These products are critical for driving sales and should be prioritized in inventory and marketing efforts.
+Result:
 
 
 ![image](https://github.com/user-attachments/assets/4c19496f-dca0-4371-a044-a9a796eff6ef)
+
+
+2. Top 5 Selling Products by Region
+The top 5 products in each region were identified, highlighting regional preferences and opportunities for targeted marketing.
+
+Results:
+
+
+![image](https://github.com/user-attachments/assets/6bfa282c-5cd4-4123-9e57-cca9c0cfe305)
+
+
+
+3.
