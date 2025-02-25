@@ -37,10 +37,31 @@ The analysis aimed to answer the following key business questions:
 The ETL process was implemented using Python to prepare the data for analysis:
 Extract: The dataset was downloaded from Kaggle using the Kaggle API and extracted from a zip file.
 Transform:
-a)	Handled null values by replacing 'Not Available' and 'unknown' with NaN.
-b)	Renamed columns to lowercase and replaced spaces with underscores for consistency.
-c)	Derived new columns: discount, sale_price, and profit using existing columns.
-d)	Converted order_date from an object to a datetime data type.
-e)	Dropped unnecessary columns like cost_price, list_price, and discount_percent.
+1.	Handled null values by replacing 'Not Available' and 'unknown' with NaN.
+2.	Renamed columns to lowercase and replaced spaces with underscores for consistency.
+3.	Derived new columns: discount, sale_price, and profit using existing columns.
+4.	Converted order_date from an object to a datetime data type.
+5.	Dropped unnecessary columns like cost_price, list_price, and discount_percent.
 Load: The cleaned data was loaded into a SQL Server database using the sqlalchemy library, with options to either replace or append the data.
 
+
+```
+CREATE TABLE df_orders (
+    [order_id] INT PRIMARY KEY,
+    [order_date] DATE,
+    [ship_mode] VARCHAR(20),
+    [segment] VARCHAR(20),
+    [country] VARCHAR(20),
+    [city] VARCHAR(20),
+    [state] VARCHAR(20),
+    [postal_code] VARCHAR(20),
+    [region] VARCHAR(20),
+    [category] VARCHAR(20),
+    [sub_category] VARCHAR(20),
+    [product_id] VARCHAR(50),
+    [quantity] INT,
+    [discount] DECIMAL(7,2),
+    [sale_price] DECIMAL(7,2),
+    [profit] DECIMAL(7,2)
+);
+```
