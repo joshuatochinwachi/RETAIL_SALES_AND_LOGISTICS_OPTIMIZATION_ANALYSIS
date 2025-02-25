@@ -221,6 +221,7 @@ ORDER BY (profit_2023 - profit_2022) DESC;
 The analysis yielded the following key insights based on the SQL queries:
 1. Top 10 Revenue-Generating Products
 The top 10 products contributing the most to revenue were identified. These products are critical for driving sales and should be prioritized in inventory and marketing efforts.
+
 Result:
 
 
@@ -230,11 +231,45 @@ Result:
 2. Top 5 Selling Products by Region
 The top 5 products in each region were identified, highlighting regional preferences and opportunities for targeted marketing.
 
-Results:
+Result:
 
 
 ![image](https://github.com/user-attachments/assets/6bfa282c-5cd4-4123-9e57-cca9c0cfe305)
 
 
+3. Month-over-Month Sales Growth (2022 vs 2023)
+The month-over-month sales growth comparison revealed significant growth in 2023 compared to 2022, with certain months showing exponential growth.
 
-3.
+Result:
+
+
+![image](https://github.com/user-attachments/assets/6884f6b1-d5aa-4a3f-aaeb-1530be33e246)
+
+
+4. Highest Sales Month for Each Category
+The best-performing months for each category were identified, with Furniture and Office Supplies leading in sales.
+
+Result:
+
+
+![image](https://github.com/user-attachments/assets/88c6c296-78b9-445a-9c11-b45ecd74f1de)
+
+
+5. Sub-Category with Highest Profit Growth (2023 vs 2022)
+The Technology sub-category had the highest profit growth in 2023 compared to 2022, making it a key area for investment.
+
+Result:
+
+
+![image](https://github.com/user-attachments/assets/4c4842e7-1ea1-4bba-bf10-32bd3432582a)
+
+
+## Recommendations
+Focus on Top Products: Allocate more resources to the top 10 revenue-generating products, such as TEC-PH-10003645 and FUR-CH-10000454, to maximize profits.
+Regional Optimization: Tailor marketing strategies based on regional preferences. For example, TEC-PH-10003645 is a top performer in both the South and West regions.
+Seasonal Promotions: Leverage insights from month-over-month growth to plan seasonal promotions. For instance, March and May are high-performing months for Furniture and Office Supplies, respectively.
+Category Expansion: Invest in high-performing categories like Furniture and Technology to drive further growth.
+Profit Maximization: Focus on sub-categories with the highest profit growth, such as Technology, to ensure sustained profitability.
+
+## Conclusion
+This project demonstrates my ability to extract, transform, and analyze large datasets using Python and SQL. By uncovering key insights into sales performance, regional trends, and profit growth, I provided actionable recommendations to optimize business operations. My expertise in data analysis, combined with my proficiency in Python, SQL, and database management, makes me a strong candidate for data-driven roles in any organization. This project showcases my ability to turn raw data into meaningful insights that drive business success.
