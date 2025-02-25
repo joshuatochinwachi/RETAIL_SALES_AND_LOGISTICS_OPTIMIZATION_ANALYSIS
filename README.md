@@ -36,7 +36,7 @@ The analysis aimed to answer the following key business questions:
 ## ETL Process Using Python
 The ETL process was implemented using Python to prepare the data for analysis:
 
-##### Extract:
+#### Extract:
 The dataset was downloaded from Kaggle using the Kaggle API and extracted from a zip file using the python codes below.
 ```
 !pip install kaggle
@@ -52,7 +52,7 @@ import pandas as pd
 df = pd.read_csv('orders.csv')
 ```
 
-##### Transform (Data Cleaning):
+#### Transform (Data Cleaning):
 1.	Handled null values by replacing 'Not Available' and 'unknown' with NaN.
 ```
 df = pd.read_csv('orders.csv', na_values=['Not Available', 'unknown'])
@@ -85,7 +85,7 @@ df['order_date'] = pd.to_datetime(df['order_date'], format = '%Y-%m-%d')
 df.drop(columns = ['cost_price', 'list_price', 'discount_percent'], inplace=True)
 ```
 
-##### Load:
+#### Load:
 The cleaned data was loaded into a SQL Server database using the sqlalchemy library, with options to either replace or append the data.
 ```
 import sqlalchemy as sal
